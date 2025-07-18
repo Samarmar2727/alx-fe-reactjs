@@ -1,7 +1,8 @@
+
 function  Footer() {
     return (   
         <footer>
-         <p>© 2023 City Lovers</p>
+         <p style={{ backgroundColor: 'black', color: 'white', textAlign: 'center' }}>© 2023 City Lovers</p>
         </footer>
     );
 }
