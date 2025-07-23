@@ -5,7 +5,7 @@ const useRecipeStore = create (
         recieps :[],
         addRecipe :(newRecipe) => set(state => ({recieps: [...state.recieps,newRecipe] 
         })),
-        setRecipe :(recieps) => set(recieps)
+        setRecipes :(recieps) => set(recieps)
 
     }))
 
