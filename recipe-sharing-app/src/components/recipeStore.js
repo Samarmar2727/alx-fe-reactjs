@@ -1,11 +1,11 @@
-import {create} from "suztand"
+import {create} from "zustand"
 
 const useRecipeStore = create (
     set => ({
         recieps :[],
-        addRecips :(newRecipe) => set(state => ({recieps: [...state.recieps,newRecipe] 
+        addRecipe :(newRecipe) => set(state => ({recieps: [...state.recieps,newRecipe] 
         })),
-        setRecips :(recieps) => set(recieps)
+        setRecipe :(recieps) => set(recieps)
 
     }))
 
