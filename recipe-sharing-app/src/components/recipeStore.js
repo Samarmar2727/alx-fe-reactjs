@@ -1,5 +1,5 @@
 
-import create from 'zustand';
+import {create} from 'zustand';
 
 export const useRecipeStore = create((set) => ({
   recipes: [],
@@ -35,5 +35,29 @@ export const useRecipeStore = create((set) => ({
         recipe.title.toLowerCase().includes(state.searchTerm.toLowerCase())
       ),
     })), 
+
+    // fav && recomnadtion state 
+    favorites: [], 
+    recommendations: [],
+
+    // actions 
+    // add recipe to fav
+  addFavorite: (recipeId) => set(state => ({
+    favorites: [...state.favorites, recipeId]
+  })),
+
+  // remove recipe from fav
+  removeFavorite: (recipeId) => set(state => ({
+    favorites: state.favorites.filter(id => id !== recipeId)
+  })),
+
+    // Function to generate recommendation based on favorites
+    generateRecommendations: () => set(state => {
+    const recommended = state.recipes.filter(recipe =>
+      state.favorites.includes(recipe.id) && Math.random() > 0.5
+    );
+    return { recommendations: recommended };
+  }),
+    
 }));
 

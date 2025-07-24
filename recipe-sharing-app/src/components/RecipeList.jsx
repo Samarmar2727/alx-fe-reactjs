@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import useRecipeStore from "./recipeStore";
+import FavoriteButton from "./favoriteButton";
+import RemoveButton from "./RemoveButton";
 
 const RecipeList = () => {
   const recipes = useRecipeStore(state => state.recipes);
@@ -21,9 +23,12 @@ const RecipeList = () => {
           <div className="bg-gradient-to-br from-pink-100 to-pink-200 p-5 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold text-pink-800">{recipe.title}</h3>
             <p className="text-pink-700 mt-2">{recipe.description}</p>
+            <FavoriteButton recipeId={recipe.id} />
+             <RemoveButton recipeId={recipe.id} />
           </div>
         </Link>
       ))}
+      
     </div>
   );
 };
