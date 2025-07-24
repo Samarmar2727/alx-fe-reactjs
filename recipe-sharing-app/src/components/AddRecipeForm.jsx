@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { useRecipeStore } from './stores/useRecipeStore';
+import useRecipeStore from "./recipeStore";
+
 
 const AddRecipeForm = () => {
   const addRecipe = useRecipeStore(state => state.addRecipe);
@@ -18,7 +19,7 @@ const AddRecipeForm = () => {
       onSubmit={handleSubmit}
       className="bg-white p-6 rounded-2xl shadow-md max-w-md mx-auto mt-8 space-y-4"
     >
-      <h2 className="text-2xl font-semibold text-pink-600 text-center">Add New Recipe</h2>
+      <h2 className="text-2xl font-semibold text-pink-600 text-center">Add New Recipe </h2>
 
       <input
         type="text"
