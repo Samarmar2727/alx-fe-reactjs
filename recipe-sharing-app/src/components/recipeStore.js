@@ -8,6 +8,7 @@ export const useRecipeStore = create((set) => ({
   addRecipe: (newRecipe) =>
     set((state) => ({
       recipes: [...state.recipes, newRecipe],
+      setRecipes :(recieps) => set(recieps)
     })),
 
   // to delete recipe 
