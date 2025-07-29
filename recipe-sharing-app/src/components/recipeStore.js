@@ -1,7 +1,7 @@
 
 import {create} from 'zustand';
 
-export const useRecipeStore = create((set) => ({
+export  const useRecipeStore = create((set) => ({
   recipes: [],
 
   // to add a new recipe
