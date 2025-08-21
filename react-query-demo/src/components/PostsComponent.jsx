@@ -1,26 +1,28 @@
+
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 
-async function fetchPosts() {
+const fetchPosts = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   if (!res.ok) {
     throw new Error("Network response was not ok");
   }
   return res.json();
-}
+};
 
-export default function PostsComponent() {
+const PostsComponent = () => {
   const {
     data,
-    isLoading,
-    isError,
     error,
+    isError,
+    isLoading,
+    refetch,
   } = useQuery({
     queryKey: ["posts"],
     queryFn: fetchPosts,
     cacheTime: 1000 * 60 * 5, // 5 minutes
     staleTime: 1000 * 60 * 1, // 1 minute
-    refetchOnWindowFocus: true,
+    refetchOnWindowFocus: false,
     keepPreviousData: true,
   });
 
@@ -30,11 +32,16 @@ export default function PostsComponent() {
   return (
     <div>
       <h2>Posts</h2>
+      <button onClick={() => refetch()}>Refetch Posts</button>
       <ul>
-        {data.map((post) => (
-          <li key={post.id}>{post.title}</li>
+        {data?.slice(0, 5).map((post) => (
+          <li key={post.id}>
+            <strong>{post.title}</strong>
+          </li>
         ))}
       </ul>
     </div>
   );
-}
+};
+
+export default PostsComponent;
