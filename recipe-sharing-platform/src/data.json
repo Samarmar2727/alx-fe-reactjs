@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "Classic Italian pasta with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Bacon", "Black Pepper"],
+    "steps": ["Boil pasta", "Cook bacon", "Mix eggs with cheese", "Combine all and serve"]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken in a creamy tomato gravy.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Chicken", "Tomatoes", "Cream", "Spices"],
+    "steps": ["Grill chicken", "Make tomato sauce", "Add cream", "Mix all"]
+  },
+  {
+    "id": 3,
+    "title": "Beef Tacos",
+    "summary": "Mexican-style tacos filled with seasoned beef and veggies.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Tortillas", "Ground Beef", "Lettuce", "Cheese", "Tomatoes"],
+    "steps": ["Cook beef", "Warm tortillas", "Assemble tacos", "Serve hot"]
+  },
+  {
+    "id": 4,
+    "title": "Vegetable Stir Fry",
+    "summary": "Quick and healthy stir-fried vegetables with soy sauce.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Broccoli", "Carrots", "Bell Peppers", "Soy Sauce"],
+    "steps": ["Chop veggies", "Stir fry in wok", "Add sauce", "Serve with rice"]
+  },
+  {
+    "id": 5,
+    "title": "Margarita Pizza",
+    "summary": "Classic pizza topped with tomatoes, mozzarella, and basil.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Pizza Dough", "Tomato Sauce", "Mozzarella", "Basil"],
+    "steps": ["Prepare dough", "Spread sauce", "Add toppings", "Bake in oven"]
+  },
+  {
+    "id": 6,
+    "title": "Pancakes",
+    "summary": "Fluffy pancakes served with syrup and butter.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Flour", "Milk", "Eggs", "Butter", "Maple Syrup"],
+    "steps": ["Mix batter", "Pour on pan", "Flip when bubbly", "Serve with syrup"]
+  },
+  {
+    "id": 7,
+    "title": "Caesar Salad",
+    "summary": "Crisp romaine lettuce with Caesar dressing and croutons.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Lettuce", "Croutons", "Parmesan", "Caesar Dressing"],
+    "steps": ["Chop lettuce", "Add dressing", "Mix with croutons", "Top with cheese"]
+  },
+  {
+    "id": 8,
+    "title": "Chocolate Cake",
+    "summary": "Rich and moist chocolate cake topped with frosting.",
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": ["Flour", "Cocoa Powder", "Eggs", "Sugar", "Butter"],
+    "steps": ["Mix ingredients", "Bake in oven", "Cool cake", "Add frosting"]
+  }
+]
