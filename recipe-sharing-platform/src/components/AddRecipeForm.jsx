@@ -6,7 +6,6 @@ export default function AddRecipeForm() {
   const [instructions, setInstructions] = useState(""); 
   const [errors, setErrors] = useState({}); 
 
-  
   const validate = () => {
     const newErrors = {};
 
@@ -15,7 +14,7 @@ export default function AddRecipeForm() {
     }
 
     const ingArr = ingredients
-      .split(/,|\n/)         
+      .split(/,|\n/)
       .map((s) => s.trim())
       .filter(Boolean);
 
@@ -49,7 +48,6 @@ export default function AddRecipeForm() {
     console.log("New recipe:", payload);
     alert("Recipe submitted successfully!");
 
-    // reset
     setTitle("");
     setIngredients("");
     setInstructions("");
@@ -58,7 +56,9 @@ export default function AddRecipeForm() {
 
   return (
     <div className="max-w-xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-2xl">
-      <h2 className="text-2xl font-bold mb-4 text-[#2e4d38]">Add a New Recipe</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#2e4d38]">
+        Add a New Recipe
+      </h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Title */}
@@ -68,7 +68,7 @@ export default function AddRecipeForm() {
             placeholder="Recipe Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full p-2 border rounded-lg focus:outline-none focus:ring focus:ring-[#2e4d38]/30"
+            className="w-full p-2 border rounded-lg focus:outline-none focus:ring focus:ring-[#2e4d38]/30 md:p-3"
           />
           {errors.title && <p className="text-red-600 text-sm mt-1">{errors.title}</p>}
         </div>
@@ -79,7 +79,7 @@ export default function AddRecipeForm() {
             placeholder="Ingredients (separate with commas or new lines)"
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
-            className="w-full p-2 border rounded-lg h-24 focus:outline-none focus:ring focus:ring-[#2e4d38]/30"
+            className="w-full p-2 border rounded-lg h-24 focus:outline-none focus:ring focus:ring-[#2e4d38]/30 md:h-28"
           />
           {errors.ingredients && (
             <p className="text-red-600 text-sm mt-1">{errors.ingredients}</p>
@@ -92,7 +92,7 @@ export default function AddRecipeForm() {
             placeholder="Preparation Steps (one step per line)"
             value={instructions}
             onChange={(e) => setInstructions(e.target.value)}
-            className="w-full p-2 border rounded-lg h-32 focus:outline-none focus:ring focus:ring-[#2e4d38]/30"
+            className="w-full p-2 border rounded-lg h-32 focus:outline-none focus:ring focus:ring-[#2e4d38]/30 md:h-40"
           />
           {errors.instructions && (
             <p className="text-red-600 text-sm mt-1">{errors.instructions}</p>
@@ -101,7 +101,7 @@ export default function AddRecipeForm() {
 
         <button
           type="submit"
-          className="w-full bg-[#2e4d38] text-[#f5f5dc] py-2 rounded-lg hover:bg-[#24402f] transition"
+          className="w-full bg-[#2e4d38] text-[#f5f5dc] py-2 rounded-lg hover:bg-[#24402f] transition md:py-3"
         >
           Submit Recipe
         </button>
