@@ -36,9 +36,9 @@ export default function RecipeDetail() {
         ))}
       </ul>
 
-      <h2 className="text-2xl font-semibold text-[#2e4d38] mb-3">👩‍🍳 Steps</h2>
+      <h2 className="text-2xl font-semibold text-[#2e4d38] mb-3">👩‍🍳 Instructions</h2>
       <ol className="list-decimal list-inside space-y-2 text-gray-700">
-        {recipe.steps.map((step, index) => (
+        {recipe.instructions.map((step, index) => (
           <li key={index}>{step}</li>
         ))}
       </ol>

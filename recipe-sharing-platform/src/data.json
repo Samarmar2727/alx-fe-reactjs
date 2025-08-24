@@ -5,7 +5,7 @@
     "summary": "Classic Italian pasta with eggs, cheese, bacon, and black pepper.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Bacon", "Black Pepper"],
-    "steps": ["Boil pasta", "Cook bacon", "Mix eggs with cheese", "Combine all and serve"]
+    "instructions": ["Boil pasta", "Cook bacon", "Mix eggs with cheese", "Combine all and serve"]
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "summary": "Chunks of grilled chicken in a creamy tomato gravy.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Chicken", "Tomatoes", "Cream", "Spices"],
-    "steps": ["Grill chicken", "Make tomato sauce", "Add cream", "Mix all"]
+    "instructions": ["Grill chicken", "Make tomato sauce", "Add cream", "Mix all"]
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "summary": "Mexican-style tacos filled with seasoned beef and veggies.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Tortillas", "Ground Beef", "Lettuce", "Cheese", "Tomatoes"],
-    "steps": ["Cook beef", "Warm tortillas", "Assemble tacos", "Serve hot"]
+    "instructions": ["Cook beef", "Warm tortillas", "Assemble tacos", "Serve hot"]
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "summary": "Quick and healthy stir-fried vegetables with soy sauce.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Broccoli", "Carrots", "Bell Peppers", "Soy Sauce"],
-    "steps": ["Chop veggies", "Stir fry in wok", "Add sauce", "Serve with rice"]
+    "instructions": ["Chop veggies", "Stir fry in wok", "Add sauce", "Serve with rice"]
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "summary": "Classic pizza topped with tomatoes, mozzarella, and basil.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Pizza Dough", "Tomato Sauce", "Mozzarella", "Basil"],
-    "steps": ["Prepare dough", "Spread sauce", "Add toppings", "Bake in oven"]
+    "instructions": ["Prepare dough", "Spread sauce", "Add toppings", "Bake in oven"]
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "summary": "Fluffy pancakes served with syrup and butter.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Flour", "Milk", "Eggs", "Butter", "Maple Syrup"],
-    "steps": ["Mix batter", "Pour on pan", "Flip when bubbly", "Serve with syrup"]
+    "instructions": ["Mix batter", "Pour on pan", "Flip when bubbly", "Serve with syrup"]
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "summary": "Crisp romaine lettuce with Caesar dressing and croutons.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Lettuce", "Croutons", "Parmesan", "Caesar Dressing"],
-    "steps": ["Chop lettuce", "Add dressing", "Mix with croutons", "Top with cheese"]
+    "instructions": ["Chop lettuce", "Add dressing", "Mix with croutons", "Top with cheese"]
   },
   {
     "id": 8,
@@ -61,6 +61,6 @@
     "summary": "Rich and moist chocolate cake topped with frosting.",
     "image": "https://via.placeholder.com/300x200",
     "ingredients": ["Flour", "Cocoa Powder", "Eggs", "Sugar", "Butter"],
-    "steps": ["Mix ingredients", "Bake in oven", "Cool cake", "Add frosting"]
+    "instructions": ["Mix ingredients", "Bake in oven", "Cool cake", "Add frosting"]
   }
 ]
