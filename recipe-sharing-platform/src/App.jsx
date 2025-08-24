@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 import HomePage from "./components/HomePage";
 import RecipeDetail from "./components/RecipeDetail";
+import AddRecipeForm from "./components/AddRecipeForm";
 
 
 
@@ -16,6 +17,7 @@ export default function App() {
          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/recipe/:id" element={<RecipeDetail />} />
+             <Route path="/add" element={<AddRecipeForm />} />
           </Routes>
       </main>
       <Footer />
