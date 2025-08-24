@@ -1,7 +1,11 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 import HomePage from "./components/HomePage";
+import RecipeDetail from "./components/RecipeDetail";
+
+
 
 export default function App() {
   return (
@@ -9,7 +13,10 @@ export default function App() {
       <Header />
       <main className="flex-grow">
         <LandingPage />
-        <HomePage />
+         <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/recipe/:id" element={<RecipeDetail />} />
+          </Routes>
       </main>
       <Footer />
     </div>
